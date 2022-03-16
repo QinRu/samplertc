@@ -25,6 +25,7 @@ const LockedLabel = styled.div({
 });
 
 const Container = styled.div({
+    border: 'red 1px solid',
   display: 'grid',
   gridTemplateAreas: `
     'pin pin'
@@ -119,7 +120,7 @@ const RoomControls: React.SFC<Props> = ({
       </LockButton>
       <LockedLabel>
         {currentPassword && <span>Room Locked: {currentPassword}</span>}
-        {!currentPassword && <span>Anyone may join</span>}
+        {!currentPassword && <span>Public Room</span>}
       </LockedLabel>
       <a style={{ gridArea: 'leave' }} href={parsedLeaveUrl ? parsedLeaveUrl.toString() : '/'}>
         <LeaveButton>

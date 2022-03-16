@@ -24,7 +24,7 @@
       <meta name="simplewebrtc-sound-test-output" content="/url-of-mp3-file" />
     -->
 
-    <title>SimpleWebRTC Sample App</title>
+    <title>ZhiJian Video Chat</title>
     <style>
       body {
         margin: 0;
@@ -194,6 +194,13 @@
         max-width: 800px;
         text-align: center;
       }
+
+      .join-title{
+        margin-top: 10%;
+        color: #00b0e9;
+        margin-bottom: 3%;
+        font-size: 35px;
+      }
     </style>
   </head>
   <body>
@@ -202,11 +209,11 @@
     </noscript>
     <div id="root"></div>
     <template id="haircheck-header">
-      <h2 style="text-align: center">Ready to join a video chat?</h2>
+      <h2 style="text-align: center" class="join-title">Welcome to ZhiJian Video Chat Room</h2>
     </template>
     <template id="empty-peer-grid">
       <h2 style="text-align: center; color: rgba(68, 68, 68, 0.25)">
-        There isn't anyone here (yet!)
+        Waiting for someone to join...
       </h2>
     </template>
     <template id="empty-roster">
@@ -216,7 +223,7 @@
       <div class="container">
         <form class="create-room-form" method="GET" action="/">
           <span class="create-room-form-input-wrapper"
-            ><span class="domain">localhost/</span
+            ><span class="domain">Chat Room/</span
             ><input
               type="text"
               name="room"
@@ -226,7 +233,7 @@
             class="create-room-form-button button button-default button-undefined"
             type="submit"
           >
-            Start a chat
+            Create a chat room
           </button>
         </form>
       </div>

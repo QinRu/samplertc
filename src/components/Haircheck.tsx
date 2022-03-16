@@ -71,7 +71,7 @@ const Controls = styled.div`
     display: block;
     font-weight: bold;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 
     svg {
@@ -107,9 +107,10 @@ const AcceptButtonContainer = styled.div({
 });
 
 const AcceptButton = styled(TalkyButton)`
-  margin-top: 20px;
+  margin-top: 30px;
+  width: 100%;
   background-color: ${({ theme }) => colorToString(theme.buttonPrimaryBackground)};
-  font-size: 22px;
+  font-size: 20px;
   color: ${({ theme }) => colorToString(theme.buttonPrimaryText)};
   padding: 10px;
   :hover {
@@ -400,7 +401,7 @@ class Haircheck extends React.Component<HaircheckProps, HaircheckState> {
                           >
                             {!this.state.showAccept || requestingCapture
                               ? 'Getting Ready...'
-                              : 'Join Call'}
+                              : 'Join Chat Room'}
                           </AcceptButton>
                         </AcceptButtonContainer>
                       </>

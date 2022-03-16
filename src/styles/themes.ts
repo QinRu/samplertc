@@ -44,7 +44,7 @@ export interface TalkyTheme extends TalkyBaseTheme {
 }
 
 const lightBase: TalkyBaseTheme = {
-  background: colorFromHex('#fff'),
+  background: colorFromHex('#eaeaea'),
   foreground: colorFromHex('#444'),
   border: lighten(colorFromHex('#444'), 0.5),
   primaryBackground: colors.blue,

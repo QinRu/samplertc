@@ -2,7 +2,7 @@ import styled, { CSSObject } from 'styled-components';
 import { colorToString } from '../utils/colorify';
 
 const TalkyButton = styled.button`
-  border-radius: 5px;
+  // border-radius: 5px;
   transition: background 200ms linear;
   font-size: 14px;
   min-height: 30px;
