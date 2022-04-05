@@ -25,7 +25,6 @@ const LockedLabel = styled.div({
 });
 
 const Container = styled.div({
-    border: 'red 1px solid',
   display: 'grid',
   gridTemplateAreas: `
     'pin pin'
